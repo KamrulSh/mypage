@@ -18,3 +18,15 @@ pip install django
 ```
 django-admin startproject mypage .
 ```
+
+### Run in the local server
+
+```
+python3 manage.py runserver
+```
+
+### Create app
+
+```
+python3 manage.py startapp challenges
+```
