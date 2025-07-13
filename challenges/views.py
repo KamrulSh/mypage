@@ -1,4 +1,4 @@
-from django.http import HttpResponseNotFound, HttpResponseRedirect
+from django.http import Http404, HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
@@ -41,4 +41,4 @@ def monthly_challenge(request, month):
             "challenge_name": response_text, "month_name": month
         })
     except KeyError:
-        return HttpResponseNotFound("<h1>Not found</h1>")
+        raise Http404()
