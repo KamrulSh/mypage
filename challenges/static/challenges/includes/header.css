@@ -1,0 +1,36 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(135deg, #837fff, #6c71ef);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Link styling */
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}

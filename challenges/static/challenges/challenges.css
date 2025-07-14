@@ -1,3 +1,34 @@
 ul {
     list-style: none;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+li {
+    background: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #5f72bd;
+    font-size: 1.1rem;
+}
+
+li a:hover {
+    color: #b241ff;
 }
